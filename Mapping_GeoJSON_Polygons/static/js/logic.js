@@ -24,7 +24,7 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoNeighborhoods = "https://raw.githubusercontent.com/agregorash/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/Mapping_GeoJSON_polygons/torontoNeighborhoods.json";
+let torontoHoods = "https://raw.githubusercontent.com/agregorash/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/Mapping_GeoJSON_polygons/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
