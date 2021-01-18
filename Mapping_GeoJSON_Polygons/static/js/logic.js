@@ -23,8 +23,8 @@ let map = L.map('mapid', {
 });
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
-// Accessing the Toronto airline routes GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/agregorash/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/torontoNeighborhoods.json";
+// Accessing the Toronto neighborhoods GeoJSON URL.
+let torontoNeighborhoods = "https://raw.githubusercontent.com/agregorash/Mapping_Earthquakes/Mapping_GEOJSON_Polygons/Mapping_GEOJSON_polygons/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
